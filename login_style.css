@@ -1,0 +1,543 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+  
+  header{
+    position: relative;
+  }
+  
+  .header1 {
+    background-color: #386272;
+    display: flex;
+    height: 80px;
+  
+  }
+  
+  .header2{
+    font-family: 'Dosis', sans-serif;
+    font-weight: bold;
+    background-color: rgba(255, 255, 255, 0.6);
+    height: 40px;
+  }
+  
+  .footer-container {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: #386272;
+    color: #fff;
+    padding: 20px 0;
+  }
+  
+  .footer-content{
+    display: flex;
+  
+  }
+  
+  .socials-container {
+    margin-top: -80px;
+    margin-left: auto;
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    gap: 25px;
+    padding: 20px 40px;
+  }
+  .social {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: 1px solid rgb(194, 194, 194);
+  }
+  .twitter:hover {
+    background: linear-gradient(45deg, #66757f, #00acee, #36daff, #dbedff);
+  }
+  .facebook:hover {
+    background: linear-gradient(45deg, #134ac0, #316ff6, #78a3ff);
+  }
+  .google-plus:hover {
+    background: linear-gradient(45deg, #872419, #db4a39, #ff7061);
+  }
+  .instagram:hover {
+    background: #f09433;
+    background: -moz-linear-gradient(
+      45deg,
+      #f09433 0%,
+      #e6683c 25%,
+      #dc2743 50%,
+      #cc2366 75%,
+      #bc1888 100%
+    );
+    background: -webkit-linear-gradient(
+      45deg,
+      #f09433 0%,
+      #e6683c 25%,
+      #dc2743 50%,
+      #cc2366 75%,
+      #bc1888 100%
+    );
+    background: linear-gradient(
+      45deg,
+      #f09433 0%,
+      #e6683c 25%,
+      #dc2743 50%,
+      #cc2366 75%,
+      #bc1888 100%
+    );
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+  }
+  .social svg {
+    fill: white;
+    height: 20px;
+  }
+  
+  .address {
+    font-weight: normal;
+  }
+  
+  .text-footer{
+    font-weight: bold;
+    font-family: 'Dosis', sans-serif;
+    font-size: 16px;
+  }
+  
+  .circlelogo .logo-circle-image {
+    width: 80px; /* Change this value to adjust the size */
+    margin-left: 20px;
+    margin-right: 10px;
+  }
+  
+  .orderbutton {
+    margin-left: auto; /* This will push the button to the right */
+  }
+  
+  button {
+    right: 30px;
+    top: 15px;
+    font-size: 18px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    display: inline-block;
+    text-align: center;
+    font-weight: bold;
+    padding: 0.5em 0.8em;
+    border: 3px solid #508CA3;
+    border-radius: 25px;
+    position: absolute;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.1);
+    color: #508CA3;
+    text-decoration: none;
+    transition: 0.3s ease all;
+    z-index: 1;
+  }
+  
+  .button:hover {
+    background-color: #508CA3;
+  }
+  
+  button:before {
+    transition: 0.5s all ease;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    right: 50%;
+    bottom: 0;
+    opacity: 0;
+    content: '';
+    background-color: #508CA3;
+    z-index: -1;
+    border-radius: 15px;
+  
+  }
+  
+  button:hover, button:focus {
+    color: white;
+  }
+  
+  button:hover:before, button:focus:before {
+    transition: 0.5s all ease;
+    left: 0;
+    right: 0;
+    opacity: 1;
+  }
+  
+  button:active {
+    transform: scale(0.9);
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    float: right;
+  }
+  
+  nav ul li {
+    margin-left: 14px;
+    margin-right: 35px;
+    margin-top: -6px;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: #508CA3;
+  }
+  
+  .hiccup-logo img{
+    width: 200px; 
+    position: absolute;
+    top: 10px; /* Adjust this value as needed to position the logo */
+    left: 40px; /* Adjust this value as needed to position the logo */
+    z-index: 9999; /* Ensures the logo is on top of other elements */
+  }
+  
+  .circlelogo img{
+    width: 150px;
+    margin-left: 50px;
+  }
+  
+  body{
+    margin: 0;
+    background: #dfbebe;
+    background: -webkit-radial-gradient(circle, #dfbebe 0%, #eba3ae 100%);
+    background: radial-gradient(circle, #dfbebe 0%, #eba3ae 100%);
+    background: radial-gradient(35.36% 35.36% at 100% 25%,#0000 66%,#dfbebe 68% 70%,#0000 72%) 32px 32px/calc(2*32px) calc(2*32px),
+    radial-gradient(35.36% 35.36% at 0    75%,#0000 66%,#dfbebe 68% 70%,#0000 72%) 32px 32px/calc(2*32px) calc(2*32px),
+    radial-gradient(35.36% 35.36% at 100% 25%,#0000 66%,#dfbebe 68% 70%,#0000 72%) 0 0/calc(2*32px) calc(2*32px),
+    radial-gradient(35.36% 35.36% at 0    75%,#0000 66%,#dfbebe 68% 70%,#0000 72%) 0 0/calc(2*32px) calc(2*32px),
+    repeating-conic-gradient(#eba3ae 0 25%,#0000 0 50%) 0 0/calc(2*32px) calc(2*32px),
+    radial-gradient(#0000 66%,#dfbebe 68% 70%,#0000 72%) 0 calc(32px/2)/32px 32px#eba3ae;
+  }
+  
+  .card {
+    font-family: 'Dosis', sans-serif;
+    width: 400px;
+    border-radius: 4px;
+    box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+    overflow: hidden;
+    background-color: rgba(255, 255, 255, 0.3);
+    position: absolute;
+    top: 25%;
+    left: 35%;
+    transform: translate(-10%,-10%);
+  }
+  
+  .card-header {
+    background-color: #386272;
+    padding: 16px;
+    text-align: center;
+  }
+  
+  .card-header .text-header {
+    font-weight: bold;
+    margin: 0;
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+  }
+  
+  .card-body {
+    padding: 16px;
+  }
+  
+  .form-group {
+    margin-bottom: 10px;
+    margin-left: 10px;
+  }
+  
+  .form-group label {
+    display: block;
+    font-size: 14px;
+    color: #386272;
+    font-weight: bold;
+    margin-bottom: 1px;
+  }
+  
+  .form-group input[type="text"],
+  .form-group input[type="email"],
+  .form-group input[type="password"] {
+    width: 92%;
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .btn {
+    padding: 12px 24px;
+    font-size: 16px;
+    margin-left: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #386272;
+    color: #fff;
+    text-transform: uppercase;
+    transition: background-color 0.2s ease-in-out;
+    cursor: pointer
+  }
+  
+  .btn:hover {
+    background-color: #508CA3;
+    color: white;
+  }
+  
+  .signup-link {
+    text-align: center;
+    color: #386272;
+  
+  }
+  
+  .signup-btn, .fp-btn {
+    color: #386272;
+    font-weight: bold;
+    font-family: 'Dosis', sans-serif;
+    text-decoration: none;
+  }
+  
+  .signup-btn:hover, .fp-btn:hover {
+    text-decoration: underline;
+  }
+  
+  .card{
+  opacity: 0;
+  animation: fadeInAnimation 1s ease forwards;
+  }
+  
+  @keyframes fadeInAnimation {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    }
+
+    .dropdownpromos:hover .dropdownpromos-content {
+      display: block;
+      width: 260px;
+      height: 180px;
+    }
+    
+    .dropdownpromos-content {
+      display: none;
+      position: absolute;
+      background-color: rgba(255, 255, 255, 0.6);
+      min-width: 100px; /* Adjust as needed */
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); /* Box shadow for dropdown */
+      z-index: 1;
+    }
+    
+    .dropdownpromos-content a {
+      color: #508CA3; /* Link color */
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+    }
+    
+    /* Adjust dropdown link styles as needed */
+    .dropdownpromos-content a:hover {
+      background-color: rgba(255, 255, 255, 0.6); /* Hover color */
+    }
+    
+    .small-text {
+      font-size: 0.8em; /* You can adjust the font size as needed */
+    }
+    
+    .promo-content {
+      display: flex; /* Use flexbox for layout */
+      align-items: center; /* Align items vertically */
+    }
+    
+    /* Adjust the size of the image */
+    .kathniel {
+      max-width: 50px; /* Set the maximum width */
+      height: auto; /* Maintain aspect ratio */
+      margin-right: -10px; /* Add margin for spacing */
+      margin-left: 8px;
+    }
+    
+    /* Style the promo text */
+    .promo-text, .promo-text2 {
+      font-size: 16px; /* Adjust font size */
+      margin-right: -90px;
+    }
+    
+    
+    .promo-content2 {
+      display: flex; /* Use flexbox for layout */
+      align-items: center; /* Align items vertically */
+    }
+    
+    /* Adjust the size of the image */
+    .xmaspromo {
+      max-width: 50px; /* Set the maximum width */
+      height: auto; /* Maintain aspect ratio */
+      margin-right: -10px; /* Add margin for spacing */
+      margin-left: 8px;
+    }
+    
+    /* Style the promo text */
+    .promo-text2 {
+      font-size: 16px; /* Adjust font size */
+      /* Add any other desired styles */
+    }
+  
+  @media screen and (max-width: 768px) {
+    .dropdownpromos-content {
+        position: absolute;
+        top: 220px; /* Adjust the distance from the top as needed */
+        right: 0px;
+      }
+
+    .card {
+        font-family: 'Dosis', sans-serif;
+        width: 300px;
+        border-radius: 4px;
+        box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+        overflow: hidden;
+        background-color: rgba(255, 255, 255, 0.3);
+        position: absolute;
+        top: 25%;
+        left: 10%;
+        transform: translate(-10%,-10%);
+      }
+  
+      .btn {
+        font-size: 16px;
+        margin-left: 30px;
+        border: none;
+        border-radius: 4px;
+        background-color: #386272;
+        color: #fff;
+        text-transform: uppercase;
+        transition: background-color 0.2s ease-in-out;
+        cursor: pointer
+      }
+  
+    .social svg {
+        height: 15px; /* Adjust the height to your preferred size */
+      }
+  
+    .social {
+        width: 30px;
+        height: 30px;
+        /* Other styles you want to apply */
+      }
+  
+    footer{
+        height: 135px;
+    }
+    .socials-container {
+        margin-top: -20px;
+        margin-left: 65px;
+        width: fit-content;
+        height: fit-content;
+        display: flex;
+        gap: 25px;
+        padding: 20px 40px;
+      }
+  
+    .text-footer{
+        font-weight: bold;
+        font-family: 'Dosis', sans-serif;
+        font-size: 11px;
+      }
+  
+    .circlelogo .logo-circle-image {
+        width: 60px; /* Change this value to adjust the size */
+      }
+  
+    button{
+        right: 15px;
+        width: 120px;
+        height: 60px;;
+        top: 10px;
+        z-index: 9999;
+    }
+    .hiccup-logo img{
+        margin-left: -25px;
+    }
+  
+    nav ul {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 30px;
+      right: 20px;
+      width: 25%;
+      background-color: rgba(255, 255, 255, 0.6);
+      z-index: 9999;
+  
+    }
+  
+    nav ul.active {
+      display: flex;
+    }
+  
+    nav ul li {
+      margin: 0;
+      margin-top: 15px;
+      margin-bottom: 15px;
+      margin-left: -25px;
+      z-index: 9999;
+  
+    }
+  
+    .menu-icon {
+      display: block;
+      position: absolute;
+      top: 13px;
+      right: 20px;
+      cursor: pointer;
+      z-index: 999;
+    }
+  
+    .menu-icon .bar {
+      display: block;
+      width: 20px;
+      height: 3px;
+      margin-bottom: 5px;
+      position: relative;
+      background: #386272;
+      border-radius: 3px;
+      transform-origin: 4px 0px;
+      transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
+        opacity 0.55s ease;
+    }
+  
+    .menu-icon .bar:first-child {
+      transform-origin: 0% 0%;
+    }
+  
+    .menu-icon .bar:last-child {
+      transform-origin: 0% 100%;
+    }
+  
+    .menu-icon.active .bar:nth-child(1) {
+      transform: rotate(45deg) translate(5px, -2px);
+    }
+  
+    .menu-icon.active .bar:nth-child(2) {
+      opacity: 0;
+    }
+  
+    .menu-icon.active .bar:nth-child(3) {
+      transform: rotate(-45deg) translate(4px, -1px);
+    }
+  }

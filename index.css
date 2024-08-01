@@ -1,0 +1,904 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+  
+.secondheader{
+    position: relative;
+    margin-top: 10px;
+    background-color: #386272;
+    display: flex;
+    height: 500px;
+}
+
+  header{
+    position: relative;
+  }
+  
+  .header1 {
+    background-color: #386272;
+    display: flex;
+    height: 80px;
+  
+  }
+  
+  .header2{
+    font-family: 'Dosis', sans-serif;
+    font-weight: bold;
+    background-color: rgba(255, 255, 255, 0.6);
+    height: 40px;
+  }
+
+
+  .footer-container {
+    width: 100%;
+    background-color: #386272;
+    color: #fff;
+    padding: 20px 0;
+    position: relative;
+    bottom: 1;
+  }
+  
+  .footer-content{
+    display: flex;
+  
+  }
+  
+  .socials-container {
+    margin-top: -80px;
+    margin-left: auto;
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    gap: 25px;
+    padding: 20px 40px;
+  }
+  .social {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: 1px solid rgb(194, 194, 194);
+  }
+  .twitter:hover {
+    background: linear-gradient(45deg, #66757f, #00acee, #36daff, #dbedff);
+  }
+  .facebook:hover {
+    background: linear-gradient(45deg, #134ac0, #316ff6, #78a3ff);
+  }
+  .google-plus:hover {
+    background: linear-gradient(45deg, #872419, #db4a39, #ff7061);
+  }
+  .instagram:hover {
+    background: #f09433;
+    background: -moz-linear-gradient(
+      45deg,
+      #f09433 0%,
+      #e6683c 25%,
+      #dc2743 50%,
+      #cc2366 75%,
+      #bc1888 100%
+    );
+    background: -webkit-linear-gradient(
+      45deg,
+      #f09433 0%,
+      #e6683c 25%,
+      #dc2743 50%,
+      #cc2366 75%,
+      #bc1888 100%
+    );
+    background: linear-gradient(
+      45deg,
+      #f09433 0%,
+      #e6683c 25%,
+      #dc2743 50%,
+      #cc2366 75%,
+      #bc1888 100%
+    );
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+  }
+  .social svg {
+    fill: white;
+    height: 20px;
+  }
+  
+  .address {
+    font-weight: normal;
+  }
+  
+  .text-footer{
+    font-weight: bold;
+    font-family: 'Dosis', sans-serif;
+    font-size: 16px;
+  }
+  
+  .circlelogo .logo-circle-image {
+    width: 80px; /* Change this value to adjust the size */
+    margin-left: 20px;
+    margin-right: 10px;
+  }
+  
+  .orderbutton {
+    margin-left: auto; /* This will push the button to the right */
+  }
+  
+  button {
+    right: 30px;
+    top: 15px;
+    font-size: 18px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    display: inline-block;
+    text-align: center;
+    font-weight: bold;
+    padding: 0.5em 0.8em;
+    border: 3px solid #508CA3;
+    border-radius: 25px;
+    position: absolute;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.1);
+    color: #508CA3;
+    text-decoration: none;
+    transition: 0.3s ease all;
+    z-index: 1;
+  }
+  
+  .button:hover {
+    background-color: #508CA3;
+  }
+  
+  button:before {
+    transition: 0.5s all ease;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    right: 50%;
+    bottom: 0;
+    opacity: 0;
+    content: '';
+    background-color: #508CA3;
+    z-index: -1;
+    border-radius: 15px;
+  
+  }
+  
+  button:hover, button:focus {
+    color: white;
+  }
+  
+  button:hover:before, button:focus:before {
+    transition: 0.5s all ease;
+    left: 0;
+    right: 0;
+    opacity: 1;
+  }
+  
+  button:active {
+    transform: scale(0.9);
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    float: right;
+  }
+  
+  nav ul li {
+    margin-left: 14px;
+    margin-right: 35px;
+    margin-top: -6px;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: #508CA3;
+  }
+  
+  .hiccup-logo img{
+    width: 200px; 
+    position: absolute;
+    top: 10px; /* Adjust this value as needed to position the logo */
+    left: 40px; /* Adjust this value as needed to position the logo */
+    z-index: 9999; /* Ensures the logo is on top of other elements */
+  }
+  
+  .circlelogo img{
+    width: 150px;
+    margin-left: 50px;
+  }
+  
+  body{
+    min-height: 100vh; /* Ensure the body takes at least the height of the viewport */
+    margin: 0;
+    background: #dfbebe;
+    background: -webkit-radial-gradient(circle, #dfbebe 0%, #eba3ae 100%);
+    background: radial-gradient(circle, #dfbebe 0%, #eba3ae 100%);
+    background: radial-gradient(35.36% 35.36% at 100% 25%,#0000 66%,#dfbebe 68% 70%,#0000 72%) 32px 32px/calc(2*32px) calc(2*32px),
+    radial-gradient(35.36% 35.36% at 0    75%,#0000 66%,#dfbebe 68% 70%,#0000 72%) 32px 32px/calc(2*32px) calc(2*32px),
+    radial-gradient(35.36% 35.36% at 100% 25%,#0000 66%,#dfbebe 68% 70%,#0000 72%) 0 0/calc(2*32px) calc(2*32px),
+    radial-gradient(35.36% 35.36% at 0    75%,#0000 66%,#dfbebe 68% 70%,#0000 72%) 0 0/calc(2*32px) calc(2*32px),
+    repeating-conic-gradient(#eba3ae 0 25%,#0000 0 50%) 0 0/calc(2*32px) calc(2*32px),
+    radial-gradient(#0000 66%,#dfbebe 68% 70%,#0000 72%) 0 calc(32px/2)/32px 32px#eba3ae;
+  }
+
+  .slogan{
+    margin-top: -70px;
+    text-align: center;
+    font-size: 90px;
+    font-weight: bold;
+    font-family: 'Dosis', sans-serif;
+    color: white;
+  }
+
+  .aboutus{
+    margin-top: -70px;
+    text-align: center;
+    font-size: 90px;
+    font-family: 'Dosis', sans-serif;
+    font-weight: bold;
+    color: white;
+  }
+
+  .description{
+    margin-right: 150px;
+    margin-left: 150px;
+    margin-top: -90px;
+    font-weight: normal;
+    font-size: 20px;
+    font-family: 'Dosis', sans-serif;
+    color: white;
+    text-align: center; /* Centers the text horizontally */
+}
+
+.pagkain{
+    text-align: center;
+}
+
+.pagkain img {
+    width: 1200px; /* Adjust the width percentage as needed */
+    display: block;
+    margin: 0 auto;  
+}
+
+.customers img{
+    margin-left: 50px;
+    margin-top: 70px;
+    text-align: left;
+    display: block;
+    width: 700px; /* Adjust the width percentage as needed */
+}
+
+.customersdescription{
+    margin-top: 140px;
+    margin-left: auto;
+    margin-right: 90px;
+    font-size: 50px;
+    font-weight: bold;
+    font-family: 'Dosis', sans-serif;
+    color: white;
+    text-align: right; /* Centers the text horizontally */
+}
+
+.firstrowcard{
+  font-family: 'Dosis', sans-serif;
+  margin-top: -70px;
+  position: relative;
+}
+
+.secondrowcard{
+  font-family: 'Dosis', sans-serif;
+  margin-top: 620px;
+  position: relative;
+}
+
+.secondrowcard .card,
+.secondrowcard .card2 {
+  height: 275px; /* Change the height to your desired value */
+}
+
+.thirdrowcard{
+  font-family: 'Dosis', sans-serif;
+  margin-top: 935px;
+  position: relative;
+  align-items: center;
+}
+
+.thirdrowcard .card {
+  height: 215px;
+  width: 1338px;
+}
+
+/* card 1 */
+.card {
+  position: absolute;
+  text-align: justify;
+  padding: 20px;
+  width: 645px;
+  height: 485px;
+  border-radius: 10px;
+  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.25);
+  transition: all 0.2s;
+  left: 6%;
+}
+
+.card:hover {
+  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.4);
+  transform: scale(1.01);
+}
+
+.card__header {
+  position: relative;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.text {
+  color: white;
+  font-size: 23px;
+
+}
+
+.card__header {
+  bottom: 10px;
+  font-size: 50px;
+  font-weight: bold;
+
+}
+
+.card-5 {
+  background: radial-gradient(circle, #508ca3 0%, #386272 100%);
+
+}
+
+ /* card 2 */
+ .card2 {
+  position: absolute;
+  text-align: justify;
+  padding: 20px;
+  width: 645px;
+  height: 485px;
+  border-radius: 10px;
+  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.25);
+  transition: all 0.2s;
+  right: 6%;
+}
+
+.card2:hover {
+  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.4);
+  transform: scale(1.01);
+}
+
+.card__header2{
+  position: relative;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.text2 {
+  color: white;
+  font-size: 23px;
+
+}
+
+.card__header2 {
+  bottom: 10px;
+  font-size: 50px;
+  font-weight: bold;
+
+}
+
+.card-6 {
+  background: radial-gradient(circle, #508ca3 0%, #386272 100%);
+}
+
+.dropdownpromos:hover .dropdownpromos-content {
+  display: block;
+  width: 260px;
+  height: 180px;
+}
+
+.dropdownpromos-content {
+  display: none;
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.6);
+  min-width: 100px; /* Adjust as needed */
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); /* Box shadow for dropdown */
+  z-index: 1;
+}
+
+.dropdownpromos-content a {
+  color: #508CA3; /* Link color */
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Adjust dropdown link styles as needed */
+.dropdownpromos-content a:hover {
+  background-color: rgba(255, 255, 255, 0.6); /* Hover color */
+}
+
+.small-text {
+  font-size: 0.8em; /* You can adjust the font size as needed */
+}
+
+.promo-content {
+  display: flex; /* Use flexbox for layout */
+  align-items: center; /* Align items vertically */
+}
+
+/* Adjust the size of the image */
+.kathniel {
+  max-width: 50px; /* Set the maximum width */
+  height: auto; /* Maintain aspect ratio */
+  margin-right: -10px; /* Add margin for spacing */
+  margin-left: 8px;
+}
+
+/* Style the promo text */
+.promo-text, .promo-text2 {
+  font-size: 16px; /* Adjust font size */
+  margin-right: -90px;
+}
+
+
+.promo-content2 {
+  display: flex; /* Use flexbox for layout */
+  align-items: center; /* Align items vertically */
+}
+
+/* Adjust the size of the image */
+.xmaspromo {
+  max-width: 50px; /* Set the maximum width */
+  height: auto; /* Maintain aspect ratio */
+  margin-right: -10px; /* Add margin for spacing */
+  margin-left: 8px;
+}
+
+/* Style the promo text */
+.promo-text2 {
+  font-size: 16px; /* Adjust font size */
+  /* Add any other desired styles */
+}
+@media screen and (max-width: 1024px) {
+
+  .aboutus{
+    margin-bottom: 90px;
+    margin-top: 30px;
+    font-size: 40px;
+  }
+
+  .slogan{
+    margin-bottom: 90px;
+    margin-top: 30px;
+    font-size: 40px;
+  }
+
+  .description{
+    font-weight: normal;
+    font-size: 25px;
+    margin-left: 50px;
+    margin-right: 50px;
+    text-align: justify;
+    justify-content: center;
+  }
+
+  .pagkain img{
+    width: 700px;
+  }
+
+.customers img{
+  margin-top: 120px;
+  margin-left: 20px;
+  width: 450px; /* Adjust the width percentage as needed */
+    display: block;
+}
+
+.customersdescription{
+  font-size: 35px;
+  margin-top: 120px;
+  margin-left: 50px;
+  margin-right: 30px;
+  text-align: justify;
+  font-weight: normal
+  ;
+}
+}
+
+  
+  @media screen and (max-width: 768px) {
+    .dropdownpromos-content {
+      position: absolute;
+      top: 220px; /* Adjust the distance from the top as needed */
+      right: 0;
+    }
+
+    .thirdrowcard{
+      margin-top: 2000px;
+    }
+
+    .text, .text2{
+      font-size: 15px;
+    }
+    .card{
+      margin-left: 15px;
+    }
+
+    .card, .card2{
+      width: 300px;
+    }
+
+    .secondrowcard .card{
+      height: 280px;
+    }
+    .secondrowcard .card2{
+      height: 265px;
+    }
+
+    .firstrowcard .card2{
+      height: 320px;
+      margin-top: 850px;
+    }
+    .secondrowcard .card2{
+      height: 320px;
+      margin-top: 680px;
+    }
+
+    .thirdrowcard .card{
+      width: 300px;
+      margin-top: -340px;
+      height: 320px;
+    }
+
+    .thirdrowcard{
+      margin-bottom: -230px;
+
+    }
+
+    .card2{
+      margin-top: 1090px;
+      margin-right: 15px;
+    }
+
+    .secondheader{
+        margin-top: 10px;
+        flex-direction: column;
+        text-align: center;
+        height: 420px;
+    }
+    .customers img{
+        width: 90%; /* Adjust the width percentage as needed */
+        max-width: 100%;
+        display: block;
+        margin: 0 auto;
+        padding-top: 30px;
+    }
+    
+    .customersdescription{
+        max-width: 100%;
+        margin-right: 20px;
+        margin-left: 20px;
+        margin-top: 40px;
+        font-size: 25px;
+        font-family: 'Dosis', sans-serif;
+        color: white;
+        text-align: center; /* Centers the text horizontally */
+    }
+
+    .pagkain img {
+        margin: 0 auto;
+        max-width: 100%;
+        margin-top: -10px;
+        width: 500px;
+    }
+
+    .slogan{
+        margin-top: -20px;
+        text-align: center;
+        font-size: 30px;
+      }
+      .description{
+        margin-left: 30px;
+        margin-right: 30px;
+        margin-top: -25px;
+        font-weight: normal;
+        font-size: 10px;
+        font-weight: bold;
+        font-family: 'Dosis', sans-serif;
+        color: white;
+        text-align: center; /* Centers the text horizontally */
+    }
+
+      .social svg {
+        height: 15px; /* Adjust the height to your preferred size */
+      }
+  
+    .social {
+        width: 30px;
+        height: 30px;
+        /* Other styles you want to apply */
+      }
+
+      .footer-container{
+        margin-top: -30%;
+      }
+  
+    footer{
+        height: 135px;
+    }
+    .socials-container {
+        margin-top: -20px;
+        margin-left: 65px;
+        width: fit-content;
+        height: fit-content;
+        display: flex;
+        gap: 25px;
+        padding: 20px 40px;
+      }
+  
+    .text-footer{
+        font-weight: bold;
+        font-family: 'Dosis', sans-serif;
+        font-size: 11px;
+      }
+  
+    .circlelogo .logo-circle-image {
+        width: 60px; /* Change this value to adjust the size */
+      }
+  
+    button{
+        right: 15px;
+        width: 120px;
+        height: 60px;;
+        top: 10px;
+        z-index: 9999;
+    }
+    .hiccup-logo img{
+        margin-left: -25px;
+    }
+  
+    nav ul {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 30px;
+      right: 20px;
+      width: 25%;
+      background-color: rgba(255, 255, 255, 0.6);
+      z-index: 9999;
+    }
+  
+    nav ul.active {
+      display: flex;
+    }
+  
+    nav ul li {
+      margin: 0;
+      margin-top: 15px;
+      margin-bottom: 15px;
+      margin-left: -25px;
+      z-index: 9999;
+  
+    }
+  
+    .menu-icon {
+      display: block;
+      position: absolute;
+      top: 13px;
+      right: 20px;
+      cursor: pointer;
+      z-index: 999;
+    }
+  
+    .menu-icon .bar {
+      display: block;
+      width: 20px;
+      height: 3px;
+      margin-bottom: 5px;
+      position: relative;
+      background: #386272;
+      border-radius: 3px;
+      transform-origin: 4px 0px;
+      transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
+        opacity 0.55s ease;
+    }
+  
+    .menu-icon .bar:first-child {
+      transform-origin: 0% 0%;
+    }
+  
+    .menu-icon .bar:last-child {
+      transform-origin: 0% 100%;
+    }
+  
+    .menu-icon.active .bar:nth-child(1) {
+      transform: rotate(45deg) translate(5px, -2px);
+    }
+  
+    .menu-icon.active .bar:nth-child(2) {
+      opacity: 0;
+    }
+  
+    .menu-icon.active .bar:nth-child(3) {
+      transform: rotate(-45deg) translate(4px, -1px);
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    .secondheader{
+        margin-top: 10px;
+        flex-direction: column;
+        text-align: center;
+        height: 420px;
+    }
+    .customers img{
+        width: 90%; /* Adjust the width percentage as needed */
+        max-width: 100%;
+        display: block;
+        margin: 0 auto;
+        padding-top: 30px;
+    }
+    
+    .customersdescription{
+        max-width: 100%;
+        margin-right: 20px;
+        margin-left: 20px;
+        margin-top: 40px;
+        font-size: 25px;
+        font-weight: bold;
+        font-family: 'Dosis', sans-serif;
+        color: white;
+        text-align: center; /* Centers the text horizontally */
+    }
+
+    .pagkain img {
+        margin: 0 auto;
+        max-width: 100%;
+        margin-top: -10px;
+        width: 500px;
+    }
+
+    .slogan{
+        margin-top: -20px;
+        text-align: center;
+        font-size: 30px;
+      }
+      .description{
+        margin-left: 30px;
+        margin-right: 30px;
+        margin-top: -85px;
+        margin-bottom: 40px;
+        font-weight: normal;
+        font-size: 15px;
+        font-weight: bold;
+        font-family: 'Dosis', sans-serif;
+        color: white;
+        text-align: justify; /* Centers the text horizontally */
+    }
+
+      .social svg {
+        height: 15px; /* Adjust the height to your preferred size */
+      }
+  
+    .social {
+        width: 30px;
+        height: 30px;
+        /* Other styles you want to apply */
+      }
+  
+    footer{
+        height: 135px;
+    }
+    .socials-container {
+        margin-top: -20px;
+        margin-left: 65px;
+        width: fit-content;
+        height: fit-content;
+        display: flex;
+        gap: 25px;
+        padding: 20px 40px;
+      }
+  
+    .text-footer{
+        font-weight: bold;
+        font-family: 'Dosis', sans-serif;
+        font-size: 11px;
+      }
+  
+    .circlelogo .logo-circle-image {
+        width: 60px; /* Change this value to adjust the size */
+      }
+  
+    button{
+        right: 15px;
+        width: 120px;
+        height: 60px;;
+        top: 10px;
+        z-index: 9999;
+    }
+    .hiccup-logo img{
+        margin-left: -25px;
+    }
+  
+    nav ul {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 30px;
+      right: 20px;
+      width: 25%;
+      background-color: rgba(255, 255, 255, 0.6);
+      z-index: 9999;
+  
+    }
+  
+    nav ul.active {
+      display: flex;
+    }
+  
+    nav ul li {
+      margin: 0;
+      margin-top: 15px;
+      margin-bottom: 15px;
+      margin-left: -25px;
+      z-index: 9999;
+  
+    }
+  
+    .menu-icon {
+      display: block;
+      position: absolute;
+      top: 13px;
+      right: 20px;
+      cursor: pointer;
+      z-index: 999;
+    }
+  
+    .menu-icon .bar {
+      display: block;
+      width: 20px;
+      height: 3px;
+      margin-bottom: 5px;
+      position: relative;
+      background: #386272;
+      border-radius: 3px;
+      transform-origin: 4px 0px;
+      transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
+        opacity 0.55s ease;
+    }
+  
+    .menu-icon .bar:first-child {
+      transform-origin: 0% 0%;
+    }
+  
+    .menu-icon .bar:last-child {
+      transform-origin: 0% 100%;
+    }
+  
+    .menu-icon.active .bar:nth-child(1) {
+      transform: rotate(45deg) translate(5px, -2px);
+    }
+  
+    .menu-icon.active .bar:nth-child(2) {
+      opacity: 0;
+    }
+  
+    .menu-icon.active .bar:nth-child(3) {
+      transform: rotate(-45deg) translate(4px, -1px);
+    }
+  }
+
+  

@@ -1,0 +1,579 @@
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@400;700&display=swap");
+*{
+  
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Dosis', sans-serif;
+
+}
+header{
+  position: relative;
+}
+
+.header1 {
+  background-color: #386272;
+  display: flex;
+  height: 80px;
+
+}
+
+.header2{
+  font-family: 'Dosis', sans-serif;
+  font-weight: bold;
+  background-color: rgba(255, 255, 255, 0.6);
+  height: 40px;
+}
+
+
+.orderbutton {
+  margin-left: auto; /* This will push the button to the right */
+}
+
+button {
+  right: 30px;
+  top: 15px;
+  font-size: 18px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  display: inline-block;
+  text-align: center;
+  font-weight: bold;
+  padding: 0.5em 0.8em;
+  border: 3px solid #508CA3;
+  border-radius: 25px;
+  position: absolute;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.1);
+  color: #508CA3;
+  text-decoration: none;
+  transition: 0.3s ease all;
+  z-index: 1;
+}
+
+.button:hover {
+  background-color: #508CA3;
+}
+
+button:before {
+  transition: 0.5s all ease;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  right: 50%;
+  bottom: 0;
+  opacity: 0;
+  content: '';
+  background-color: #508CA3;
+  z-index: -1;
+  border-radius: 15px;
+
+}
+
+button:hover, button:focus {
+  color: white;
+}
+
+button:hover:before, button:focus:before {
+  transition: 0.5s all ease;
+  left: 0;
+  right: 0;
+  opacity: 1;
+}
+
+button:active {
+  transform: scale(0.9);
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  float: right;
+}
+
+nav ul li {
+  margin-left: 14px;
+  margin-right: 35px;
+  margin-top: 10px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #508CA3;
+}
+
+.hiccup-logo img{
+  width: 200px; 
+  position: absolute;
+  top: 10px;
+  left: 40px; 
+  z-index: 9999; 
+}
+
+  body {
+    font-family: 'Dosis', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #dfbebe;
+    background: -webkit-radial-gradient(circle, #dfbebe 0%, #eba3ae 100%);
+    background: radial-gradient(circle, #dfbebe 0%, #eba3ae 100%);
+    background: radial-gradient(35.36% 35.36% at 100% 25%,#0000 66%,#dfbebe 68% 70%,#0000 72%) 32px 32px/calc(2*32px) calc(2*32px),
+    radial-gradient(35.36% 35.36% at 0    75%,#0000 66%,#dfbebe 68% 70%,#0000 72%) 32px 32px/calc(2*32px) calc(2*32px),
+    radial-gradient(35.36% 35.36% at 100% 25%,#0000 66%,#dfbebe 68% 70%,#0000 72%) 0 0/calc(2*32px) calc(2*32px),
+    radial-gradient(35.36% 35.36% at 0    75%,#0000 66%,#dfbebe 68% 70%,#0000 72%) 0 0/calc(2*32px) calc(2*32px),
+    repeating-conic-gradient(#eba3ae 0 25%,#0000 0 50%) 0 0/calc(2*32px) calc(2*32px),
+    radial-gradient(#0000 66%,#dfbebe 68% 70%,#0000 72%) 0 calc(32px/2)/32px 32px#eba3ae;
+  }
+
+button {
+  font-size: 18px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  display: inline-block;
+  font-weight: bold;
+  padding: 0.5em 0.8em;
+  border: 3px solid #508CA3;
+  border-radius: 25px;
+  position: relative;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.1);
+  color: #508CA3;
+  text-decoration: none;
+  transition: 0.3s ease all;
+  z-index: 1;
+  margin-top: 5px;
+}
+
+.button:hover {
+  background-color: #508CA3;
+}
+
+button:before {
+  transition: 0.5s all ease;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  right: 50%;
+  bottom: 0;
+  opacity: 0;
+  content: '';
+  background-color: #508CA3;
+  z-index: -1;
+  border-radius: 15px;
+
+}
+
+button:hover, button:focus {
+  color: white;
+}
+
+button:hover:before, button:focus:before {
+  transition: 0.5s all ease;
+  left: 0;
+  right: 0;
+  opacity: 1;
+}
+button:active {
+  transform: scale(0.9);
+  
+}
+
+.menu {
+  padding: 0 10px 30px 10px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-gap: 20x 40px;
+}
+
+.heading {
+  color: #386272;
+  margin-bottom: 30px;
+  padding: 30px 0;
+  grid-column: 1/-1;
+  text-align: center;
+  margin-top: 30px;
+
+}
+
+.heading>h1 {
+  font-weight: 400px;
+  font-size: 82px;
+  margin-bottom: -70px;
+  margin-top: -30px;
+  letter-spacing: 10px;
+  text-transform: uppercase;
+}
+
+.heading>h3 {
+  font-weight: 600px;
+  font-size: 32px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+}
+
+.bacon-carbonara-container {
+  margin: 20px;
+  padding: 15px;
+}
+
+
+.bacon-carbonara {
+  background-color: white;
+  display: grid;
+  position: relative;
+  grid-template-rows: auto 1fr;
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
+  transition: 0.2s ease-in-out;
+  height: 500px;
+}
+
+.bacon-carbonara img {
+  display: grid;
+  position: relative;
+  width: 100%;
+  height: 280px;
+  border-radius: 15px 15px 0 0;
+  cursor: pointer;
+}
+
+.details {
+  padding: 20px 10px;
+  display: grid;
+  grid-template-rows: auto 1fr 50px;
+  grid-row-gap: 15px;
+}
+
+.crab-rangoon-container {
+  margin: 20px;
+  padding: 15px;
+}
+
+.crab-rangoon {
+  background-color: white;
+  display: grid;
+  position: relative;
+  grid-template-rows: auto 1fr;
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
+  transition: 0.2s ease-in-out;
+  height: 500px;
+}
+
+.crab-rangoon img {
+  display: grid;
+  position: relative;
+  width: 100%;
+  height: 280px;
+  border-radius: 15px 15px 0 0;
+  cursor: pointer;
+
+}
+
+.cheesy-spagh-container {
+  margin: 20px;
+  padding: 15px;
+}
+
+.cheesy-spagh {
+  background-color: white;
+  display: grid;
+  position: relative;
+  grid-template-rows: auto 1fr;
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
+  transition: 0.2s ease-in-out;
+  height: 500px;
+}
+
+.cheesy-spagh img {
+  display: grid;
+  position: relative;
+  width: 100%;
+  height: 280px;
+  border-radius: 15px 15px 0 0;
+  cursor: pointer;
+
+}
+
+.loco-moco-container {
+  margin: 20px;
+  padding: 15px;
+}
+
+.loco-moco {
+  background-color: white;
+  display: grid;
+  position: relative;
+  grid-template-rows: auto 1fr;
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
+  transition: 0.2s ease-in-out;
+  height: 500px;
+}
+
+.loco-moco img {
+  display: grid;
+  position: relative;
+  width: 100%;
+  height: 280px;
+  border-radius: 15px 15px 0 0;
+  cursor: pointer;
+
+}
+
+.nachos-container {
+  margin: 20px;
+  padding: 15px;
+}
+
+.nachos {
+  background-color: white;
+  display: grid;
+  position: relative;
+  grid-template-rows: auto 1fr;
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
+  transition: 0.2s ease-in-out;
+  height: 500px;
+}
+
+.nachos img {
+  display: grid;
+  position: relative;
+  width: 100%;
+  height: 280px;
+  border-radius: 15px 15px 0 0;
+  cursor: pointer;
+
+}
+
+.beef-noodles-container {
+  margin: 20px;
+  padding: 15px;
+}
+
+.beef-noodles {
+  background-color: white;
+  display: grid;
+  position: relative;
+  grid-template-rows: auto 1fr;
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
+  transition: 0.2s ease-in-out;
+  height: 500px;
+}
+
+.beef-noodles img {
+  display: grid;
+  position: relative;
+  width: 100%;
+  height: 280px;
+  border-radius: 15px 15px 0 0;
+  cursor: pointer;
+
+}
+
+.fish-container {
+  margin: 20px;
+  padding: 15px;
+}
+
+.fish {
+  background-color: white;
+  display: grid;
+  position: relative;
+  grid-template-rows: auto 1fr;
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
+  transition: 0.2s ease-in-out;
+  height: 500px;
+}
+
+.fish img {
+  display: grid;
+  position: relative;
+  width: 100%;
+  height: 280px;
+  border-radius: 15px 15px 0 0;
+  cursor: pointer;
+
+}
+
+.burger-steak-container {
+  margin: 20px;
+  padding: 15px;
+}
+
+.burger-steak {
+  background-color: white;
+  display: grid;
+  position: relative;
+  grid-template-rows: auto 1fr;
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
+  transition: 0.2s ease-in-out;
+  height: 500px;
+}
+
+.burger-steak img {
+  display: grid;
+  position: relative;
+  width: 100%;
+  height: 280px;
+  border-radius: 15px 15px 0 0;
+  cursor: pointer;
+
+}
+
+.wings-container {
+    margin: 20px;
+    padding: 15px;
+  }
+  
+  .chicken-wings {
+    background-color: white;
+    display: grid;
+    position: relative;
+    grid-template-rows: auto 1fr;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
+    transition: 0.2s ease-in-out;
+    height: 500px;
+  }
+  
+  .chicken-wings img {
+    display: grid;
+    position: relative;
+    width: 100%;
+    height: 280px;
+    border-radius: 15px 15px 0 0;
+    cursor: pointer;
+  
+  }
+
+  .drinks-container {
+    margin: 20px;
+    padding: 15px;
+  }
+  
+  .milktea {
+    background-color: white;
+    display: grid;
+    position: relative;
+    grid-template-rows: auto 1fr;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
+    transition: 0.2s ease-in-out;
+    height: 500px;
+  }
+  
+  .milktea img {
+    display: grid;
+    position: relative;
+    width: 100%;
+    height: 280px;
+    border-radius: 15px 15px 0 0;
+    cursor: pointer;
+  
+  }
+  
+  .menu-order-button {
+    margin-left: 30px;
+    margin-top: 30px;
+  }
+
+  .dropdownpromos:hover .dropdownpromos-content {
+    display: block;
+    width: 260px;
+    height: 180px;
+  }
+  
+  .dropdownpromos-content {
+    display: none;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.6);
+    min-width: 100px; /* Adjust as needed */
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); /* Box shadow for dropdown */
+    z-index: 1;
+  }
+  
+  .dropdownpromos-content a {
+    color: #508CA3; /* Link color */
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Adjust dropdown link styles as needed */
+  .dropdownpromos-content a:hover {
+    background-color: rgba(255, 255, 255, 0.6); /* Hover color */
+  }
+  
+  .small-text {
+    font-size: 0.8em; /* You can adjust the font size as needed */
+  }
+  
+  .promo-content {
+    display: flex; /* Use flexbox for layout */
+    align-items: center; /* Align items vertically */
+  }
+  
+  /* Adjust the size of the image */
+  .kathniel {
+    max-width: 50px; /* Set the maximum width */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: -10px; /* Add margin for spacing */
+    margin-left: 8px;
+  }
+  
+  /* Style the promo text */
+  .promo-text, .promo-text2 {
+    font-size: 16px; /* Adjust font size */
+    margin-right: -90px;
+  }
+  
+  
+  .promo-content2 {
+    display: flex; /* Use flexbox for layout */
+    align-items: center; /* Align items vertically */
+  }
+  
+  /* Adjust the size of the image */
+  .xmaspromo {
+    max-width: 50px; /* Set the maximum width */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: -10px; /* Add margin for spacing */
+    margin-left: 8px;
+  }
+  
+  /* Style the promo text */
+  .promo-text2 {
+    font-size: 16px; /* Adjust font size */
+    /* Add any other desired styles */
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: block;
+    height: 50px;
+    margin-left: -10px;
+    }
+    
+    .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.6);
+    min-width: 100px; /* Adjust as needed */
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); /* Box shadow for dropdown */
+    z-index: 1;
+    }
+    
+    .dropdown-content a {
+    color: #508CA3; /* Link color */
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    }
+    
+    /* Adjust dropdown link styles as needed */
+    .dropdown-content a:hover {
+    background-color: rgba(255, 255, 255, 0.6); /* Hover color */
+    }
